@@ -11,39 +11,14 @@
         <div class="content">
 
           <div class="ui small feed">
-            <div class="event">
-              <div class="content">
-                <div class="summary">
-                  <em>Elliot Fu</em>: The first of many test messages
-                </div>
-              </div>
-            </div>
-            <div class="event">
-              <div class="content">
-                <div class="summary">
-                  <em>Stevie Feliciano</em>: Test message
-                </div>
-              </div>
-            </div>
-            <div class="event">
-              <div class="content">
-                <div class="summary">
-                  <em>Helen Troy</em>: Another test message to look at
-                </div>
-              </div>
-            </div>
-            <div class="event">
-              <div class="content">
-                <div class="summary">
-                  <em>Christian Rocha</em>: A third test message to display
-                </div>
-              </div>
-            </div>
+            <%= render @messages %>
           </div>
+
           <div class="ui dropdown item" id="users-dropdown">
             <i class="user icon"></i><i class="dropdown icon"></i>
             <%= render  "users_menu" %>
           </div>
+          
         </div>
 
         <div class="extra content">
