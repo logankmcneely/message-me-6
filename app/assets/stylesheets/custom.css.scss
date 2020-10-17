@@ -18,9 +18,13 @@ $color-orange: #fd622a;
   width: 80%;
 }
 
-@media (max-width: 525px) {
+#nav-bar-signin-button {
+  width: 100px;
+}
+
+@media (max-width: 541px) {
   #nav-bar-container {
-    width: 420px;
+    width: 432px;
   }
 }
 
@@ -72,3 +76,18 @@ $color-orange: #fd622a;
   }
 }
 
+// Login
+
+#login-container {
+  margin-top: 16px;
+}
+
+#login-box {
+  margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  #login-divider {
+    display: none;
+  }
+}

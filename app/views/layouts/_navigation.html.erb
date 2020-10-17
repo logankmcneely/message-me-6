@@ -1,7 +1,7 @@
 <div class="ui inverted small menu" id="nav-bar-container">
-  <a class="item">
+  <%= link_to root_path, class: "item" do %>
     <i class="coffee icon fc-orange"></i>Chatroom
-  </a>
+  <% end %>
   <a class="item">
     <i class="envelope outline icon fc-orange"></i>Messages
   </a>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="item">
-      <div class="ui primary button bgc-orange">Sign Up</div>
+      <%= link_to  "Sign In/Up", login_path, class: "ui primary button bgc-orange", id:"nav-bar-signin-button" %>
     </div>
   </div>
 </div>
