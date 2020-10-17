@@ -5,7 +5,7 @@
   </h4>
 
 
-  <div class="ui centered stackable grid" id="chat-container">
+  <div class="ui centered stackable grid" id="chatbox-container">
 
     <div class="twelve wide column">
       <div class="ui fluid raised card" id="chatbox">
@@ -41,22 +41,16 @@
               </div>
             </div>
           </div>
+          <div class="ui dropdown item" id="users-dropdown">
+            <i class="user icon"></i><i class="dropdown icon"></i>
+            <%= render  "users_menu" %>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="four wide column">
-      <div class="ui inverted vertical menu" id="userbox">
-        <a class="active item">
-          Home
-        </a>
-        <a class="item">
-          Messages
-        </a>
-        <a class="item">
-          Friends
-        </a>
-      </div>
+      <%= render  "users_menu" %>
     </div>
 
   </div>

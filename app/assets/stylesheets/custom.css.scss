@@ -25,25 +25,34 @@ $color-orange: #fd622a;
 }
 
 // Homepage
-
 #chatroom-container {
   margin-top: 16px;
 }
 
 #chatbox {
-  height: 70vh;
+  height: 65vh;
+}
+
+#users-dropdown {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  display: none;
+  color: $color-orange;
+  .menu {
+    width: 150px;
+  }
 }
 
 #userbox {
   width: auto;
 }
 
-#chatbox-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  height: 100vh;
+.ui.vertical.menu .item:before {
+  width: 0 !important;
 }
+
+
 
 @media (max-height: 670px) {
   #homepage-header {
@@ -57,6 +66,9 @@ $color-orange: #fd622a;
 @media (max-width: 767px) {
   #userbox {
     display: none;
+  }
+  #users-dropdown {
+    display: block;
   }
 }
 
