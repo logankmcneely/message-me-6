@@ -17,3 +17,10 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 require("semantic-ui-sass")
+
+$(document).on('turbolinks:load', function () {
+  $('.ui.dropdown').dropdown();
+})
+
+
+

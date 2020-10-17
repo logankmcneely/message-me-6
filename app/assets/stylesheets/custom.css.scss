@@ -1,5 +1,18 @@
 @import "semantic-ui";
 
+/* Theme */
+
+$color-orange: #fd622a;
+
+.bg-color-orange {
+  background-color: $color-orange !important;
+}
+
+.font-color-orange {
+  color: $color-orange !important;
+}
+
+
 /* Nav Bar */
 #nav-bar-menu {
   margin: 4px 8px;
