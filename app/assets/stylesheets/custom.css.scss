@@ -1,19 +1,62 @@
 @import "semantic-ui";
 
-/* Theme */
 
+// Theme
 $color-orange: #fd622a;
 
-.bg-color-orange {
+.bgc-orange {
   background-color: $color-orange !important;
 }
 
-.font-color-orange {
+.fc-orange {
   color: $color-orange !important;
 }
 
-
-/* Nav Bar */
-#nav-bar-menu {
-  margin: 4px 8px;
+// Navigation
+#nav-bar-container {
+  margin: auto;
+  width: 80%;
 }
+
+@media (max-width: 525px) {
+  #nav-bar-container {
+    width: 420px;
+  }
+}
+
+// Homepage
+
+#chatroom-container {
+  margin-top: 16px;
+}
+
+#chatbox {
+  height: 70vh;
+}
+
+#userbox {
+  width: auto;
+}
+
+#chatbox-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+}
+
+@media (max-height: 670px) {
+  #homepage-header {
+    display: none;
+  }
+  #chatbox {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 767px) {
+  #userbox {
+    display: none;
+  }
+}
+
