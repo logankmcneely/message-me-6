@@ -28,6 +28,23 @@ $color-orange: #fd622a;
   }
 }
 
+// Footer
+#footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  h4 {
+    border-radius: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    a {
+      color: $color-orange;
+    }
+  }
+}
+
 // Homepage
 #chatroom-container {
   margin-top: 16px;
@@ -43,6 +60,7 @@ $color-orange: #fd622a;
   top: 8px;
   display: none;
   color: $color-orange;
+
   .menu {
     width: 150px;
   }
@@ -56,12 +74,11 @@ $color-orange: #fd622a;
   width: 0 !important;
 }
 
-
-
 @media (max-height: 670px) {
   #homepage-header {
     display: none;
   }
+
   #chatbox {
     height: 80vh;
   }
@@ -71,6 +88,7 @@ $color-orange: #fd622a;
   #userbox {
     display: none;
   }
+
   #users-dropdown {
     display: block;
   }
