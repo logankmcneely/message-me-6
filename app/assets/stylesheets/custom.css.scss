@@ -53,10 +53,13 @@ $color-orange: #fd622a;
 // Homepage (Chatroom)
 #chatroom-container {
   margin-top: 16px;
+  margin-bottom: 8px;
 }
 
-#chatbox {
-  height: 65vh;
+
+#messages {
+  height: 60vh;
+  overflow: auto;
 }
 
 #message-submit-button {
@@ -67,6 +70,7 @@ $color-orange: #fd622a;
   i {
     margin: 0;
   }
+  display: none;
 }
 
 #users-dropdown {
@@ -89,13 +93,19 @@ $color-orange: #fd622a;
   width: 0 !important;
 }
 
-@media (max-height: 670px) {
+@media (max-height: 705px) {
   #homepage-header {
     display: none;
   }
 
-  #chatbox {
-    height: 80vh;
+  #messages {
+    height: 75vh;
+  }
+}
+
+@media (max-height: 624px) {
+  #messages {
+    height: 70vh;
   }
 }
 
