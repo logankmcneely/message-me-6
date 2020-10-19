@@ -1,5 +1,7 @@
 class SessionsController < ApplicationController
 
+  before_action :logged_in_redirect, only: [:new, :create]
+
   def new
   end
 
@@ -21,4 +23,13 @@ class SessionsController < ApplicationController
     redirect_to login_path
   end
 
+  private
+
+  def logged_in_redirect
+    if logged_in?
+      flash[:warning] = "You are already logged in. Logout of current user to sign in to another."
+      redirect_to root_path
+    end
+  end
+  
 end
