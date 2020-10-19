@@ -28,6 +28,11 @@ $color-orange: #fd622a;
   }
 }
 
+// Error Messages
+#error-container {
+  margin: 8px 0;
+}
+
 // Footer
 #footer-container {
   position: fixed;
@@ -102,6 +107,10 @@ $color-orange: #fd622a;
 
 #login-box {
   margin-top: 16px;
+}
+
+#login-button {
+  width: 210px;
 }
 
 @media (max-width: 767px) {
